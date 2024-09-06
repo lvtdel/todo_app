@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +18,9 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.black
         )
       ),
+      debugShowCheckedModeBanner: false,
 
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomeScreen(),
     );
   }
 }
